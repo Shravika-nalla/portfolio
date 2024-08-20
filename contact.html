@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jersey+10&family=Matemasie&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+        }header{
+            background-color: rgb(99, 97, 97);
+            height: 10vh;
+        }
+        nav{
+            position: fixed;
+        }
+        ul{
+            display: inline-flex;
+            flex-direction: row;
+        }
+        ul li{
+            display: inline-flex;
+            list-style: none;
+            margin-top: 3vh;
+        }
+        ul li a img{
+            max-height: 6vh;
+        }  
+
+        ul li a{
+            text-decoration: none;
+            padding: 0 25px;
+            color: white;
+            font-size: large;
+        }
+
+        body{
+            /* background-image: url(https://media.istockphoto.com/id/1349390515/photo/paperless-workplace-idea-e-signing-electronic-signature-document-management-businessman-signs.jpg?s=1024x1024&w=is&k=20&c=60tt0AgNgFsNDR28IT78VEw0yAsZQ-XsiUbj5zhwXFk=); */
+            background-image: url("https://www.shutterstock.com/image-photo/using-computerhand-typing-keyboard-laptop-600nw-1774949384.jpg");
+            background-repeat: no-repeat;
+            background-size: 100vw 100vh;
+            background-color: rgba(0,0,0,0.6);
+        }
+        h1{
+            text-align: right;
+            font-size: 9vh;
+            margin-top: 3vh;
+            margin-right: 12.5vw;
+            margin-bottom: 4vh;
+            font-family: "Jersey 10", sans-serif;
+        }
+        main{
+            display: block;
+            flex-direction: row;
+            /* line-height: 10vh; */
+            font-size: x-large;
+            margin-right: 10vw;
+            float: right;
+            font-family: "Jersey 10", sans-serif;
+        }
+        input{
+            padding: 0.5vh 10vw 0.5vh 1vw;
+            border-radius: 4px;
+            height: 2.8vh;
+        }
+        textarea{
+            padding: 1vh 10vw 1vh 1vw;
+            border-radius: 4px;
+        }
+        .submit{
+            margin-left: 10vw;
+            padding: 1vh 1vw ;
+            height: auto;
+            border-radius: 7px;
+            font-weight: bolder;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li style="margin-top: 2vh;"><a href="project.html"><img src="logo.jpg"></a></li>
+                <div class="tools">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="skills.html">Skills and Achievements</a></li>
+                    <li><a href="contact.html">Contact me</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+     <h1>Contact me</h1>
+    <main>
+        <label for="name">Name:</label>
+        <br>
+        <input type="text" placeholder="Enter name" class="name">
+        <br><br><br>
+        <label for="email">Email id:</label>
+        <br>
+        <input type="email" placeholder="Enter email id" class="email">
+        <br><br><br>
+        <label for="date">Date of the appointment:</label>
+        <br>
+        <input type="date" placeholder="Select a date" class="date">
+        <br><br><br>
+        <label for="message">Message:</label>
+        <br>
+        <textarea type="text" placeholder="Type here" class="message"></textarea>
+        <br><br>
+        <input type="button" value="Submit" class="submit">
+    </main>
+</body>
+</html>

@@ -1,0 +1,57 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-color: rgb(99, 97, 97);
+    height: 10vh;
+}
+nav{
+    position: fixed;
+}
+ul{
+    display: inline-flex;
+    flex-direction: row;
+}
+ul li{
+    display: inline-flex;
+    list-style: none;
+    margin-top: 3vh;
+}
+ul li a img{
+    max-height: 6vh;
+}  
+
+ul li a{
+    text-decoration: none;
+    padding: 0 25px;
+    color: white;
+    font-size: large;
+}
+main{
+    height: calc(100vh - 10vh - 8vh);
+    column-count: 2;
+}
+main img{
+    height: calc(100vh - 10vh - 8vh);
+    max-width: 50vw;
+}
+h1{
+    text-align: center;
+    margin-top: 20vh;
+}
+p{
+    margin-top: 3vh;
+    font-size: xx-large;
+    text-align: center;
+}
+footer{
+    background-color: rgb(99, 97, 97);
+    height: 8vh;
+}
+.contact{
+    font-size: x-large;
+    color: white;
+    text-decoration: none;
+    margin-left: 45vw;
+}

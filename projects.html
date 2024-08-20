@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            background-color: rgb(99, 97, 97);
+            height: 10vh;
+        }
+        nav{
+            position: fixed;
+        }
+        ul{
+            display: inline-flex;
+            flex-direction: row;
+        }
+        ul li{
+            display: inline-flex;
+            list-style: none;
+            margin-top: 3vh;
+        }
+        ul li a img{
+            max-height: 6vh;
+        }  
+
+        ul li a{
+            text-decoration: none;
+            padding: 0 25px;
+            color: white;
+            font-size: large;
+        }
+        main{
+            height: calc(100vh - 10vh);
+        }
+        h1{
+            text-align: center;
+            font-size: 6vh;
+            margin-top: 5vh;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.8vw;
+            margin-top: 6vh;
+        }
+        .card{
+           width: 30vw;
+        }
+        .card img{
+            max-width: 30vw;
+        }
+        .card h2{
+            text-align: center;
+            font-size: xx-large;
+        }
+        .card a{
+            text-decoration: none;
+            color: black;
+        }
+        .card .button{
+            margin-left: 12vw;
+            background-color: rgb(167, 161, 161);
+            border-radius: 5px;
+            padding: 1vh;
+        }
+        .card .button:hover{
+            background-color: rgb(66, 63, 63);
+            border-radius: 6.5px;
+        }
+        .card a:hover{
+            color: white;
+        }
+        /* .card .button:visited{
+            background-color: rgb(86, 80, 80);
+            border-radius: 7px;
+        } */
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li style="margin-top: 2vh;"><a href="project.html"><img src="logo.jpg"></a></li>
+                <div class="tools">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="skills.html">Skills and Achievements</a></li>
+                    <li><a href="contact.html">Contact me</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>MY PROJECTS</h1>
+        <div class="container">
+            <div class="card">
+                <img src="word press.avif">
+                <h2>word press site</h2>
+                <br>
+                <a href="#" class="button">See more</a>
+            </div>
+            <div class="card">
+                <img src="e commerce.avif">
+                <h2>E-commerce landing page</h2>
+                <br>
+                <a href="#" class="button">See more</a>
+            </div>
+            <div class="card">
+                <img src="login.jpg">
+                <h2>Login authentication page</h2>
+                <br>
+                <a href="#" class="button">See more</a>          
+            </div>
+            <div class="card">
+                <img src="quiz.avif">
+                <h2>Quiz game</h2>
+                <br>
+                <a href="#" class="button">See more</a>
+            </div>
+            <div class="card">
+                <img src="business.avif">
+                <h2>Business blog</h2>
+                <br>
+                <a href="#" class="button">See more</a>               
+            </div>
+            <div class="card">
+                <img src="word cout.avif">
+                <h2>word counter</h2>
+                <br>
+                <a href="#" class="button">See more</a>               
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>
